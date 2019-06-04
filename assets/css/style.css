@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Roboto Thin";
+    src: url('../fonts/Roboto/Roboto-Thin.ttf')
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url('../fonts/Roboto/Roboto-Bold.ttf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /*    background: #1599c7;*/
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden
+}
+
+.bg-light {
+    background: rgb(236, 236, 236)!important;
+}
+
+.jumbotron {
+    background: rgb(236, 236, 236)!important;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        -ms-flex-direction: row;
+        margin-left: 70%;
+        flex-direction: row;
+    }
+    #img-profile {
+        float: right;
+        margin: 10% 0;
+    }
+
+    .edu-desc{
+        margin-left:43%;
+    }
+}
+
+#img-profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.events li {
+    display: flex;
+}
+
+.events .bullet {
+    content: "";
+    z-index: 2;
+    right: 0;
+    top: 0;
+    transform: translateX(50%);
+    border-radius: 50%;
+    background: #fff;
+    border: 1px #ccc solid;
+    width: .8em;
+    height: .8em;
+}
+
+.events span {
+    padding: 0 1.5em 1.5em 1.5em;
+    position: relative;
+}
+
+.events span::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    height: 100%;
+    border-left: 1px #ccc solid;
+}
+
+.events strong {
+    display: block;
+}
+
+.skillbar {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #eee;
+    height: 35px;
+    border-radius: 3px;
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+}
+
+.skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    background: #6adcfa;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.skillbar-title span {
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    height: 35px;
+    line-height: 35px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.skillbar-bar {
+    height: 35px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.achievement-desc{
+    margin-top: 10%;
+}
